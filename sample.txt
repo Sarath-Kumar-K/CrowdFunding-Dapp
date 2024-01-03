@@ -1,0 +1,10 @@
+Crowdfunding deployed to : 0x5FbDB2315678afecb367f032d93F642f64180aa3
+
+//Run the below line befor npm run dev
+// below line Starts HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
+npx hardhat node 
+//open one more terminal and run below line to deploy and run
+npx hardhat run scripts/deploy.js --network localhost
+cd client/
+export NODE_OPTIONS=--openssl-legacy-provider
+npm run dev
